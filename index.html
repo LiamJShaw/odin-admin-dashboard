@@ -5,83 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
     <header>
-        <div class="top">
-            <button class="searchButton">Search</button>
-            <input type="text" class="searchInput">
-            <p class="img">IMG</p>
-            <p class="userName top">Liam J Shaw</p>
-
+        <div class="search">
+            <button class="search-button">
+                <i class="mdi mdi-magnify"></i>
+            </button>
+            <input type="text" class="search-input">
         </div>
 
-        <div class="bottom">
-            <div class="greeting">
-                <p class="img">IMG</p>
-                <p class="hi">Hi there,</p>
-                <p class="userName bottom">Liam J Shaw</p>
-            </div>
-            <div class="actions">
-                <button class="new">New</button>
-                <button class="upload">Upload</button>
-                <button class="share">Share</button>
-            </div>
+        <div class="profile">
+            <i class="mdi mdi-bell-outline"></i>
+            <p class="user-name">
+                <i class="mdi mdi-account"></i>
+                Liam J Shaw
+            </p>
+        </div>
 
+        <div class="greeting">
+            <img src="/img/ljs.jpg" alt="Liam J Shaw" class="avatar">
+            <p class="hi">Hi there,</p>
+            <p class="user-name">Liam J Shaw</p>
+        </div>
+
+        <div class="actions">
+            <button class="new">New</button>
+            <button class="upload">Upload</button>
+            <button class="share">Share</button>
         </div>
 
     </header>
 
     <div class="sidebar">
-        <p class="img">IMG</p>
-        <h1 class="title">Dashboard</h1>
+        <div class="sidebar-title">
+            <i class="mdi mdi-view-dashboard"></i>
+            <h1 class="title">Dashboard</h1>
+        </div>
 
         <ul class="nav-links">
             <li class="home">
-                <p class="icon">@</p>
-                <p>Home</p>
+                <i class="mdi mdi-home-account"></i>
+                <p href="#home">Home</p>
             </li>
             <li class="profile">
-                <p class="icon">@</p>
+                <i class="mdi mdi-face-man-profile"></i>
                 <p>Profile</p>
             </li>
             <li class="messages">
-                <p class="icon">@</p>
+                <i class="mdi mdi-android-messages"></i>
                 <p>Messages</p>
             </li>
             <li class="history">
-                <p class="icon">@</p>
+                <i class="mdi mdi-history"></i>
                 <p>History</p>
             </li>
             <li class="tasks">
-                <p class="icon">@</p>
+                <i class="mdi mdi-format-list-checks"></i>
                 <p>Tasks</p>
             </li>
             <li class="communities">
-                <p class="icon">@</p>
+                <i class="mdi mdi-google-circles-communities"></i>
                 <p>Communities</p>
             </li>
 
+            <li class="spacer"></li>
+
             <li class="settings">
-                <p class="icon">@</p>
+                <i class="mdi mdi-cog-outline"></i>
                 <p>Settings</p>
             </li>
             <li class="support">
-                <p class="icon">@</p>
+                <i class="mdi mdi-face-agent"></i>
                 <p>Support</p>
             </li>
             <li class="privacy">
-                <p class="icon">@</p>
+                <i class="mdi mdi-shield-check-outline"></i>
                 <p>Privacy</p>
             </li>
         </ul>
     </div>
 
     <div class="main">
-        <div class="projects">
-            <h3 class="title">Your Projects</h3>
 
+        <h3 class="projects-title">Your Projects</h3>
+
+        <div class="projects">
             <div class="project">
                 <h4 class="project-title">Super Cool Project</h4>
                 <p class="project-description">Just some waffle about the project or something like that. Enough to fill a card. Is this enough?</p>
@@ -111,18 +122,18 @@
                 <h4 class="project-title">Super Cool Project</h4>
                 <p class="project-description">Just some waffle about the project or something like that. Enough to fill a card. Is this enough?</p>
             </div>   
+        
         </div>
 
+        <h3 class="announcements-title">Announcements</h3>
         <div class="announcements">
-            <h3 class="title">Announcements</h3>
-
             <div class="announcements-panel">
-                <div class="announcement">
+                <div class="announcement border">
                     <h5 class="announcement-title">SITE MAINTENANCE</h5>
                     <p class="announcement-text">THE SITE WILL BE GOING DOWN AT 03:16 AND COMING BACK ONLINE SOMEWHERE AROUND MIDNIGHT.</p>
                 </div>
 
-                <div class="announcement">
+                <div class="announcement border">
                     <h5 class="announcement-title">Site Maintenance</h5>
                     <p class="announcement-text">The site will be going down at 9AM and coming back online somewhere around midnight.</p>
                 </div>
@@ -135,27 +146,24 @@
             </div>
         </div>
 
+        <h3 class="trending-title">Trending</h3>
         <div class="trending">
-            <h3 class="title">Trending</h3>
-
             <div class="person">
-                <p class="person-name">@stone</p>
-                <p class="person-project">What?</p>
+                <img src="/img/jim.jpg" alt="Jim" class="jim">
+                <p class="person-name">@jim</p>
+                <p class="person-role">Guitar</p>
             </div>
 
             <div class="person">
-                <p class="person-name">@cold</p>
-                <p class="person-project">What?</p>
+                <img src="/img/guy.jpg" alt="guy" class="guy">
+                <p class="person-name">@guy</p>
+                <p class="person-role">Drums</p>
             </div>
 
             <div class="person">
-                <p class="person-name">@steve</p>
-                <p class="person-project">What?</p>
-            </div>
-
-            <div class="person">
-                <p class="person-name">@austin</p>
-                <p class="person-project">What?</p>
+                <img src="/img/jon.jpg" alt="Jon" class="jon">
+                <p class="person-name">@jon</p>
+                <p class="person-role">Bass</p>
             </div>
         </div>
 
