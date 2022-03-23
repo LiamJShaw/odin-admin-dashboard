@@ -90,7 +90,7 @@ header .profile {
 
 header .greeting {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 9fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
 }
@@ -99,7 +99,7 @@ header .greeting .avatar {
     grid-row: 1 / 3;
     border-radius: 100%;
     width: 4.5rem;
-    justify-self: end;
+    margin-left: 2rem;
     padding: 1rem 1.5rem;
 }
 
@@ -191,9 +191,18 @@ header .search-input {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 
     border-radius: 5px;
-    /* border-left: 1px white;  */
+    border-left: solid 10px rgb(20, 20, 20); 
 
     padding: 1.5rem 1rem;
+}
+
+.project .project-title {
+    font-size: 2rem;
+}
+
+.project .project-description {
+    padding-top: 1rem;
+    font-size: 1.25rem;
 }
 
 /* Announcements subsection */
